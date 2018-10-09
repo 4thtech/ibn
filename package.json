@@ -1,0 +1,28 @@
+{
+  "name": "investblacknow",
+  "version": "1.0.0",
+  "description": "a bussiness web application where black people can meet and network together",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "Black",
+    "Unity",
+    "Money",
+    "Power",
+    "Respect",
+    "Community"
+  ],
+  "author": "Arwn",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
